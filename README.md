@@ -109,7 +109,6 @@ shutdown -r now
 ```
  
  
-# Testeando el System Call
 
  
  
