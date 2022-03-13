@@ -59,7 +59,7 @@ gedit syscall_64.tbl
 
 Al final del documento se añadió la siguiente línea:
  ```
-333       common        chequeo_balanceo          __x64_sys_chequeo_balanceo
+333       common        chequeo_balanceo          sys_chequeo_balanceo
 ```
 
 ## Añadiendo el System Call al header del archivo
@@ -71,7 +71,7 @@ gedit syscalls.h
 Y se agrega esta linea de código al archivo:
 
  ```
-asmlinkage long __x64_sys_chequeo_balanceo(char *exp;)
+asmlinkage long sys_chequeo_balanceo(char *exp;)
 ```
 
 Esto para definir el prototipo de la función del System Call
