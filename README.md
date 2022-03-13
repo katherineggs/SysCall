@@ -109,7 +109,8 @@ shutdown -r now
 ```
  
  
-
+## Diagrama de ejecución de un SysCall para el usuario
+![Image text](https://github.com/katherineggs/SysCall/blob/main/diagrama%20de%20ejecucion%20de%20syscall%20para%20usuario.jpg)
  
  
  
