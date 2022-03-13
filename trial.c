@@ -11,9 +11,9 @@ int main()
 	// Function call
 	if (syscall(329,expresion))
 	{
-	printf("Balanced \n");
+	printf("parentesis y brackets estan balanceados \n");
 	}
 	else
-	printf("Not Balanced \n");
+	printf("parentesis y brackets no estan balanceados \n");
 	return 0;
 }
