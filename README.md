@@ -8,20 +8,20 @@ Andrea Reyes
 
 ## Detalles del sistema:
 
-Se está utilizando ubuntu 16.0.4 el cual trae el kernel 4.15.03 - generic
+Se está utilizando ubuntu 16.0.1 el cual trae el kernel 4.4.1 - generic
 
-Para la implementación del System Call se utilizó la version 4.17.4 del kernel de Linux. 
-Utilizando el comando:
+Para la implementación del System Call se utilizó la version 4.7.1 del kernel de Linux. 
+se descargo de la siguiente direccion:
 
 ```
-wget https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.16.tar.xz 
+https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=v4.7.1&id=95f15f5ed6e68b479c73da842012108c567c6999
 ```
 
 ## Manejo del kernel
 
 Primero se extrajo el source code del kernel que acabamos de obtener.
 ```
-sudo tar ¡xvf linux-4.17.4.tar.xz -C/usr/src/
+sudo tar ¡xvf linux-4.7.1.tar.xz -C/usr/src/
 ```
 
  Y se cambió el directorio en donde los archivos serán extraidos:
@@ -45,7 +45,7 @@ gedit Makefile
 
 Dentro de éste es añadida la carpeta con el comando:
  ```
-core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/ myCalls/
+core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/ mycalls/
 ```
 
 Para que el compilador se informe sobre el nuevo System Call y en qué carpeta se encuentra.
